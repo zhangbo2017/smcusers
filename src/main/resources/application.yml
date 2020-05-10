@@ -6,8 +6,6 @@ spring:
     # maillink: http://localhost:8888/securityuser/api/smc/users/confirmed/
     host: smtp.163.com
     port: 465 # mailSenderServer：smtp.163.com，use SSL，prot 465 or 587
-#    username: liker007@163.com
-#    password: liker007   # token generated from mail.163.com
     username: zhangbo19921026@163.com
     password: XOLFOXCQEYMQJPPR
     default-encoding: UTF-8
@@ -38,7 +36,7 @@ spring:
   profiles: dev
 
   mail: # JavaMailSender config
-    maillink: http://localhost:8888/smcuser/confirmed/
+    maillink: http://localhost:80/smcuser/confirmed/
     loginlink: http://localhost:4200
 
   #数据库连接配置
