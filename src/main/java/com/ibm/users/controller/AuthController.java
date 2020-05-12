@@ -24,6 +24,11 @@ import java.util.Date;
 import java.util.Set;
 import static org.springframework.http.HttpStatus.*;
 
+/**
+ * @author BoZhang
+ * E-mail:dlzbo@cn.ibm.com
+ * @version date：May 12, 2020 7:54:48 PM
+*/
 @CrossOrigin
 @RestController
 //@RequestMapping(value = "api/smc/secure", produces = MediaType.APPLICATION_JSON_VALUE) // 可访问api/smc/secure/login

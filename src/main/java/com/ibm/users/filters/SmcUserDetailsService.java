@@ -11,6 +11,11 @@ import org.springframework.stereotype.Service;
 import com.ibm.users.entity.Userinfolist;
 import com.ibm.users.service.UsersService;
 
+/**
+ * @author BoZhang
+ * E-mail:dlzbo@cn.ibm.com
+ * @version date：May 12, 2020 7:55:14 PM
+*/
 @Service
 public class SmcUserDetailsService implements UserDetailsService {
 

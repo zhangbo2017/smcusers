@@ -1,10 +1,11 @@
-/**
- * @author PingXue
- *
- */
 package com.ibm.users.model;
 
 
+/**
+ * @author BoZhang
+ * E-mail:dlzbo@cn.ibm.com
+ * @version date：May 12, 2020 7:55:34 PM
+*/
 public class AuthRequest {
 
 	// private String email;

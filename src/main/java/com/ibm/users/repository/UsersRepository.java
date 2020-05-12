@@ -12,6 +12,11 @@ import org.springframework.data.repository.query.Param;
 
 import com.ibm.users.entity.Userinfolist;
 
+/**
+ * @author BoZhang
+ * E-mail:dlzbo@cn.ibm.com
+ * @version date：May 12, 2020 7:56:20 PM
+*/
 public interface UsersRepository extends JpaRepository<Userinfolist, Integer> {
 		
 	Userinfolist findByUsername(String username);

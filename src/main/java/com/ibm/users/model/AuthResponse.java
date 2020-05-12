@@ -1,9 +1,10 @@
-/**
- * @author PingXue
- *
- */
 package com.ibm.users.model;
 
+/**
+ * @author BoZhang
+ * E-mail:dlzbo@cn.ibm.com
+ * @version date：May 12, 2020 7:55:59 PM
+*/
 public class AuthResponse {
 
 	private String jwtToken;

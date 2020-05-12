@@ -11,6 +11,11 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.ibm.users.utils.ResponseBean;
 
+/**
+ * @author BoZhang
+ * E-mail:dlzbo@cn.ibm.com
+ * @version date：May 12, 2020 7:54:52 PM
+*/
 @CrossOrigin
 @RestController
 public class RoleAccessTestController {

@@ -22,6 +22,11 @@ import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+/**
+ * @author BoZhang
+ * E-mail:dlzbo@cn.ibm.com
+ * @version date：May 12, 2020 7:54:57 PM
+*/
 @CrossOrigin
 @RestController
 //@RequestMapping("api/smc/users")

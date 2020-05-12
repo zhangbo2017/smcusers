@@ -12,6 +12,11 @@ import java.io.IOException;
 
 import static org.springframework.http.HttpStatus.FORBIDDEN;
 
+/**
+ * @author BoZhang
+ * E-mail:dlzbo@cn.ibm.com
+ * @version date：May 12, 2020 7:55:21 PM
+*/
 @Component
 public class SmcAccessDeniedHandler implements AccessDeniedHandler {
 	

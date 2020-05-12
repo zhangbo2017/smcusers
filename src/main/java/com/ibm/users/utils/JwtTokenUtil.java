@@ -15,6 +15,11 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Set;
 
+/**
+ * @author BoZhang
+ * E-mail:dlzbo@cn.ibm.com
+ * @version date：May 12, 2020 7:56:47 PM
+*/
 public class JwtTokenUtil implements Serializable {
 
   public static final String TOKEN_HEADER = "Authorization";

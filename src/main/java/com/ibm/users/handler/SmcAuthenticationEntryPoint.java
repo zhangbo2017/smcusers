@@ -11,6 +11,11 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import static org.springframework.http.HttpStatus.UNAUTHORIZED;
 
+/**
+ * @author BoZhang
+ * E-mail:dlzbo@cn.ibm.com
+ * @version date：May 12, 2020 7:55:26 PM
+*/
 @Component
 public class SmcAuthenticationEntryPoint implements AuthenticationEntryPoint {
 	

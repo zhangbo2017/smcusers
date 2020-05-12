@@ -8,6 +8,11 @@ import org.springframework.stereotype.Service;
 import com.ibm.users.entity.Userinfolist;
 import com.ibm.users.repository.UsersRepository;
 
+/**
+ * @author BoZhang
+ * E-mail:dlzbo@cn.ibm.com
+ * @version date：May 12, 2020 7:56:30 PM
+*/
 @Service
 public class UsersService {
 	

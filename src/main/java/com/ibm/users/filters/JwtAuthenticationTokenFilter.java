@@ -24,6 +24,11 @@ import java.io.IOException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+/**
+ * @author BoZhang
+ * E-mail:dlzbo@cn.ibm.com
+ * @version date：May 12, 2020 7:55:09 PM
+*/
 @Component
 public class JwtAuthenticationTokenFilter extends OncePerRequestFilter {
 

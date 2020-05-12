@@ -4,6 +4,11 @@ import com.fasterxml.jackson.databind.JsonNode;
 import java.io.Serializable;
 import java.util.LinkedHashMap;
 
+/**
+ * @author BoZhang
+ * E-mail:dlzbo@cn.ibm.com
+ * @version date：May 12, 2020 7:56:52 PM
+*/
 public class ResponseBean implements Serializable {
 
     private static final long serialVersionUID = -2818219614368513135L;

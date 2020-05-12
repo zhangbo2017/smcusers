@@ -1,5 +1,10 @@
 package com.ibm.users.model;
 
+/**
+ * @author BoZhang
+ * E-mail:dlzbo@cn.ibm.com
+ * @version date：May 12, 2020 7:56:09 PM
+*/
 public class UsersInfo {
 
     public String getUsername() {
