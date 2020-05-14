@@ -28,7 +28,7 @@ public class JwtTokenUtil implements Serializable {
   public static final long EXPIRATION_REMEMBER = 604800000L; // 7 days
   private static final long serialVersionUID = 3795255684130470783L;
   private static final String SECRET = "zheshiyigeSecret";
-  private static final String ISSUSER = "DSWLiker";
+  private static final String ISSUSER = "zhangbo";
   private static final String ROLE_CLAIMS = "SMCRole";
 
   public static String generateToken(UserDetails details, boolean isRememberMe) {
