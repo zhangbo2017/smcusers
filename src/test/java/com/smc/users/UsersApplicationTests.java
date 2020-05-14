@@ -1,4 +1,4 @@
-package com.ibm.users;
+package com.smc.users;
 
 import org.junit.Ignore;
 // import org.junit.Test;
