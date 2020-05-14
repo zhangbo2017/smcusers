@@ -29,7 +29,7 @@ public class UsersApplicationTests {
 	// @Test
 	// public void userLogin(){
 	// 	try {
-	// 		String username = "liker";
+	// 		String username = "sunny";
 	// 		String password = "111111";
 	// 		System.out.println("***********login successed");
 	// 		Userinfolist users = usersService.getUserByUsernameAndPassword(username, password);

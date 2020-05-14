@@ -42,7 +42,6 @@ public class MailService {
             message.setTo("920018225@qq.com");
             message.setSubject("hello");
             message.setText("helloha");
-//            message.setCc("liker007@163.com");
             mailSender.send(message);
 
         }catch (Exception e){
@@ -64,7 +63,6 @@ public class MailService {
         MimeMessageHelper messageHelper = new MimeMessageHelper(mimeMessage);
             messageHelper.setFrom("zhangbo19921026@163.com");
             messageHelper.setTo(email);
-//            messageHelper.setCc("liker007@163.com");
             messageHelper.setSubject("Welcome to SMC system");
             messageHelper.setText("<a href='"+ maillink + username + "'>please click here to confirm your sign up!</a>", true);
             mailSender.send(mimeMessage);
@@ -86,7 +84,6 @@ public class MailService {
             message.setTo(email);
             message.setSubject("Your New Password to Login SMC System");
             message.setText("Your New Password >>>> "+ newpassword);
-//            message.setCc("liker007@163.com");
             mailSender.send(message);
 
 //        }catch (Exception e){
