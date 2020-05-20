@@ -36,6 +36,7 @@ public interface UsersRepository extends JpaRepository<Userinfolist, Integer> {
  @Query("update Userinfolist u set u.lastupdate = :lastupdate where u.username=:username")
  int saveUsersByUsernameAndLastupdate(@Param("username") String username, @Param("lastupdate") Date lastupdate);
 
+ 
  Userinfolist findByUsernameAndPassword(String username, String password);
 
 // @GeneratedValue(strategy = GenerationType.IDENTITY)

@@ -42,7 +42,7 @@ public class UsersService {
 	};
 
 	public Userinfolist getUserByUsernameAndPassword(String username, String password) {
-		return usersRepository.findByUsername(username);
+		return usersRepository.findByUsernameAndPassword(username,password);
 	}
     
 }

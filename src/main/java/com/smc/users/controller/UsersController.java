@@ -3,7 +3,6 @@ package com.smc.users.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.core.AuthenticationException;
 // import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.*;
 
@@ -97,7 +96,6 @@ public class UsersController {
   
   @PostMapping("/settings")
   public ResponseEntity<CommonResult> updateUsersInfo(@RequestBody UsersInfo usersInfo) throws Exception {
-	  
 	  String username = usersInfo.getUsername();
 	  String oldpw = usersInfo.getPassword();
 	  String newpw = usersInfo.getNewpassword();
@@ -109,7 +107,7 @@ public class UsersController {
 	  }
 
 	  // validate old pw
-	  Userinfolist oneuser = usersService.getUserByUsernameAndPassword(username, oldpw);
+	  Userinfolist oneuser = usersService.getUserByUsernameAndPassword(usersInfo.getUsername(), usersInfo.getPassword());
 	  if (oneuser == null) {
 	      return ResponseEntity.ok().body(CommonResult.build(Const.COMMONRESULT_ERROR_CODE, "Your old password is not correct !"));
 	  }
@@ -156,17 +154,17 @@ public class UsersController {
     return ResponseEntity.ok().body(CommonResult.build(Const.COMMONRESULT_ERROR_CODE, "Logout failed!"));
   }
   
-  @ExceptionHandler(AuthenticationException.class)
-  @ResponseStatus(UNAUTHORIZED)
-  public ResponseEntity<ResponseBean> handleAuthentication401Exception(AuthenticationException exception) throws Exception {
-    return ResponseEntity.status(UNAUTHORIZED)
-                         .body(new ResponseBean(UNAUTHORIZED.value(), UNAUTHORIZED.getReasonPhrase()).error(exception.getMessage()));
-  }
-
-  @ExceptionHandler(AuthenticationException.class)
-  @ResponseStatus(FORBIDDEN)
-  public ResponseEntity<ResponseBean> handleAuthentication403Exception(AuthenticationException exception) throws Exception {
-    return ResponseEntity.status(FORBIDDEN).body(new ResponseBean(FORBIDDEN.value(), FORBIDDEN.getReasonPhrase()).error(exception.getMessage()));
-  }
+//  @ExceptionHandler(AuthenticationException.class)
+//  @ResponseStatus(UNAUTHORIZED)
+//  public ResponseEntity<ResponseBean> handleAuthentication401Exception(AuthenticationException exception) throws Exception {
+//    return ResponseEntity.status(UNAUTHORIZED)
+//                         .body(new ResponseBean(UNAUTHORIZED.value(), UNAUTHORIZED.getReasonPhrase()).error(exception.getMessage()));
+//  }
+//
+//  @ExceptionHandler(AuthenticationException.class)
+//  @ResponseStatus(FORBIDDEN)
+//  public ResponseEntity<ResponseBean> handleAuthentication403Exception(AuthenticationException exception) throws Exception {
+//    return ResponseEntity.status(FORBIDDEN).body(new ResponseBean(FORBIDDEN.value(), FORBIDDEN.getReasonPhrase()).error(exception.getMessage()));
+//  }
 	  
 }
