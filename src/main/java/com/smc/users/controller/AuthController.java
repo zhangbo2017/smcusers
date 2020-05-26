@@ -91,9 +91,9 @@ public class AuthController {
   }
   
   @RequestMapping(value = "/getUser", method = RequestMethod.POST)
-  public Userinfolist getUserByUsername(@RequestParam("username") String username) throws Exception {
+  public Userinfolist getUserbyUsername(@RequestParam("username") String username) throws Exception {
 
-	  Userinfolist userinfolist=this.usersService.getUserByUsername(username);
+	  Userinfolist userinfolist=this.usersService.getUserOfUsername(username);
 	  return userinfolist;
   }
   

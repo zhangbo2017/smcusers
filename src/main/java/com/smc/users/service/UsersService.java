@@ -19,7 +19,7 @@ public class UsersService {
 	@Autowired
 	private UsersRepository usersRepository;
 	
-	public Userinfolist getUserByUsername(String username) {
+	public Userinfolist getUserOfUsername(String username) {
 		return usersRepository.findByUsername(username);
 	}
 	
